@@ -15,7 +15,7 @@ echo "Selected IPs are: $targets"
 echo
 nmap -n -sn $targets
 #sleep $interval_time
-sleep 10
+sleep 900
 
 # Explain time sleeping
 #echo
@@ -29,7 +29,7 @@ read targets_port
 echo
 nmap -n $targets_port
 #sleep $interval_time
-sleep 10
+sleep 900
 
 # Explain time sleeping
 #echo
